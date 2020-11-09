@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>欢迎注册</title>
+        <link rel="stylesheet" href="../css/SignUp.css">
+        <script src="../js/SignUp.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <p>欢迎注册</p>
+            </header>
+            <section >
+               <form>
+				 <div class="text"><div class="tion"><p>用户账户：</p></div><input type="text" name="user" id="username"  onblur="cllss('username')"  ><span id="muser">*</span></div>
+                <div class="text"><div class="tion"><p>账户密码：</p></div><input type="password" name="pass" id="password" onblur="cllss('upass')"><span id="mpass">*</span></div>
+                <div class="text"><div class="tion"><p>确认密码：</p></div><input type="password" name="rpass" id="rpassword" onblur="cllss('rpass')"><span id="mrpass">*</span></div>
+                <div class="text"><div class="tion"><p>电子邮箱：</p></div><input type="email" name="email" id="uemail" onblur="cllss('uemail')"><span id="memail">*</span></div>
+                <div class="text"><div class="tion"><p>电话号码：</p></div><input type="tel" name="tel" id="xtel" maxlength="11" onblur="cllss('tel')"><span id="mtel">*</span></div>
+                <div class="text"><input type="submit" value="注册" id="tijiao"></div>
+               </form>
+            </section>
+        </div>
+        
+    </body>
+</html>

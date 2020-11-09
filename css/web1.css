@@ -1,0 +1,35 @@
+table{
+ /*折叠所有表格边框-使单元格共享边框*/
+    border-collapse:collapse;
+    border: 1px solid #99CCCC; 
+    text-align:left;
+    padding:4px 4px;
+    font-size:1.2em;
+	margin-bottom: .5em;
+}
+table:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0,0.1);
+}
+tr{
+    width: 400px;
+    height: 20px;
+    border: 1px solid #99CCCC; 
+    text-align:left;
+}
+td{
+    width: 400px;
+    height: 25px;
+    border: 1px solid #99CCCC; 
+    text-align:left;
+    text-indent: 2em;
+}
+.left{
+    width: 200px;
+    height: 25px;
+}
+.web1tu:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0,0.2);  
+}
+img:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0,0.2);  
+}

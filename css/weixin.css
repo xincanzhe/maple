@@ -1,0 +1,226 @@
+body,h1,h2,h3,h4,p,ul,ol,li,form,button,input,textarea,th,td {
+  margin:0;
+  padding:0
+}
+body,button,input,select,textarea {
+  font:12px/1.5 Microsoft YaHei UI Light,tahoma,arial,"\5b8b\4f53";
+  *line-height:1.5;
+  -ms-overflow-style:scrollbar;
+}
+/*以下为自写代码*/
+body,html{
+  width: 100%;
+  height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box{
+  width: 600px;
+  height: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -5;
+  position: relative;
+  /* background-image: url(../img/1.png);
+  background-size: 900px 1080px; */
+}
+#section{
+  width: 565px;
+  height: 750px;
+  /* margin-left: auto; */
+  margin-right: auto;
+  position: relative;
+  border: 1px solid #888888;
+  border-radius: 45px;
+  z-index: 5;
+  margin-left: -1060px;
+}
+#top{
+  width: 565px;
+  height: 40px;
+  background-color: rgba(136, 134, 134, 0.5);
+  border-radius:45px 45px 0 0;
+  position: absolute;
+  /* margin-left: 3px; */
+  margin-top: 0px;
+}
+.left{
+  padding-left: 19px;
+  margin-bottom: px;
+  margin-top: 7px;
+  width: 50px;
+  height: 25px;
+  color: rgb(231, 231, 231);
+}
+.fa-wifi,.fa-qq,.fa-battery{
+  color: rgb(231, 231, 231);
+}
+.fa-batteryi,.fa-qq{
+  margin-left: 5px;
+}
+.right{
+  float: right;
+  padding-right: 19px;
+  margin-bottom: 2px;
+  position: relative;
+  margin-top: -25px;
+  color: rgb(231, 231, 231);
+}
+
+#text{
+  width: 600px;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  /* background-color: ; */
+}
+.fa-keyboard-o{
+  width: 50px;
+  font-size: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 18px;
+  margin-left: -40px;
+  color: #888888;
+}
+#text2{
+  width: 470px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+}
+
+.jia{
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width:30px;
+  height: 30px;
+  margin-top: -5px;
+  border-radius: 50%;
+  color: #888888;
+  border:  3px solid rgb(167, 156, 156);
+}
+
+/* 以下样式来自CSDN   https://blog.csdn.net/qq_33988065/article/details/53856694*/
+h1,h2,h3,h4{
+  font-size:100%
+}
+
+ul,ol {
+  list-style:none;
+}
+a {
+  text-decoration:none;/*取消文本修饰*/
+}
+a:hover {
+  text-decoration:underline;/*设置文本修饰文本下的一条线。*/
+}
+img {
+  border:0;/*取消图片的边框*/
+  border-radius: 20px;
+}
+button,input,select,textarea {
+  font-size:100%/*设置文字为100%*/
+}
+table {
+  border-collapse:collapse;/*设置边框合并为一个单一的边框*/
+  border-spacing:0;/*设置边框不分开*/
+}
+
+/*rem*/
+html {
+  font-size:62.5%;
+}
+body {
+  font:16px/1.5 "microsoft yahei", 'tahoma';/*设置字体为微软雅黑、tahoma字体 字体大小为16像素或1.6em*/
+}
+body .mobile-page {
+  font-size: 1.6rem;/*字体大小为1.6rem*/
+}
+
+/*浮动*/
+.fl{
+  float: left;/*设置fl左浮动*/
+}
+.fr{
+  float: right;/*设置fr为右浮动*/
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+body{
+  background-color: #F5F5F5;/*设置body背景颜色*/
+}
+.mobile-page{
+  max-width: 600px;/*设置最大宽度*/
+  margin-top: 50px;
+}
+.mobile-page .admin-img, .mobile-page .user-img{
+  width: 45px;/*设置宽度为45像素*/
+  height: 45px;/*设置高度为45像素*/
+}
+i.triangle-admin,i.triangle-user{
+  width: 0;
+  height: 0;
+  position: absolute;/*设置位置固定*/
+  top: 10px;/*距离顶部10像素*/
+  display: inline-block;/*行内块元素*/
+  border-top: 10px solid transparent;/*设置顶部边框为实线10像素透明*/
+  border-bottom: 10px solid transparent;/*设置底部边框为实线10像素透明*/
+}
+.mobile-page i.triangle-admin{
+  left: 4px;/*左边距为4像素*/
+  border-right: 12px solid #fff;/*设置右边边框为实线12像素白色*/
+}
+.mobile-page i.triangle-user{
+  right: 4px;/*右边距为4像素*/
+  border-left: 12px solid #9EEA6A;/*设置左边边框为实线12像素白色*/
+}
+.mobile-page .admin-group, .mobile-page .user-group{
+  padding: 6px;/*设置内边距为6像素*/
+  display: flex;/*flex属性*/
+  display: -webkit-flex;/*谷歌私有前缀flex属性*/
+}
+.mobile-page .admin-group{
+  justify-content: flex-start;/*设置flex从顶部对齐*/
+  -webkit-justify-content: flex-start;
+}
+.mobile-page .user-group{
+  justify-content: flex-end;/*设置flex从底部对齐*/
+  -webkit-justify-content: flex-end;
+}
+.mobile-page .admin-reply, .mobile-page .user-reply{
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #fff;/*背景颜色为白色*/
+  margin:0 15px 12px;/*外边距为上为0 右15像素 下12像素*/
+}
+.mobile-page .admin-reply{
+  box-shadow: 0 0 2px #ddd;/*背景阴影围殴上0 右0 下2像素 颜色为#ddd*/
+}
+.mobile-page .user-reply{
+  text-align: left;/*文字左对齐*/
+  background-color: #9EEA6A;/*背景颜色为#9eea6a*/
+  box-shadow: 0 0 2px #bbb;/*背景阴影围殴上0 右0 下2像素 颜色为#bbb*/
+}
+.mobile-page .user-msg, .mobile-page .admin-msg{
+  width: 75%;/*宽度为75%*/
+  position: relative;/*自适应位置*/
+}
+.mobile-page .user-msg{
+  text-align: right;/*文字右对齐*/
+}
